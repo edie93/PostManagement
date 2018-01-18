@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800|PT+Serif");
+/* set font */
+.container {
+  font-family: "Open Sans", sans-serif;
+}
+.normal {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+.black {
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+p {
+  font-family: "PT Serif", serif;
+}
+
+.btn.sharp {
+  border-radius: 0;
+}
+
+header {
+  margin: 30px 0 30px 0;
+}
+.center-block {
+  height: 60px;
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+form a {
+  margin-right: 5px;
+}
+a.text-dark:hover {
+  text-decoration: none;
+}
+hr {
+  background-color: #000;
+  border: 0 none;
+  color: #000;
+  height: 3px !important;
+}
+h2.index-title {
+  font-size: 40px;
+}
+p.index-about {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 120%;
+}
+btn.index-clearFilter {
+  font-size: 13px;
+}
+a.categories:hover {
+  text-decoration: none;
+}
+/* display 5 lines of contnet on hoempage */
+p.index-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+
+p.index-categories {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 180%;
+}
+
+/* transition animation */
+.SlideIn-appear {
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  opacity: 0;
+}
+
+.SlideIn-appear.SlideIn-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transition: all 0.6s linear;
+}
+.SlideIn-enter {
+  opacity: 0;
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+}
+.SlideIn-enter.SlideIn-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transition: all 0.2s linear 0.4s;
+}
+.SlideIn-leave {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+}
+.SlideIn-leave.SlideIn-leave-active {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  transition: all 0.2s linear;
+}
+
+.SlideOut-appear {
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  opacity: 0;
+}
+
+.SlideOut-appear.SlideOut-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transition: all 0.6s linear;
+}
+.SlideOut-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+}
+.SlideOut-enter.SlideOut-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transition: all 0.2s linear 0.4s;
+}
+.SlideOut-leave {
+  opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+}
+.SlideOut-leave.SlideOut-leave-active {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transform: translateX(30px);
+  -webkit-transform: translateX(30px);
+  -moz-transform: translateX(30px);
+  -o-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transition: all 0.2s linear;
+}
