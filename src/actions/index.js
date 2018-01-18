@@ -2,7 +2,6 @@ import axios from "axios";
 export const FETCH_POSTS = "fetch_posts";
 export const FETCH_POST = "fetch_post";
 export const DELETE_POST = "delete_post";
-export const FETCH_CATEGORIES = "fetch_categories";
 export const CREATE_POST = "create_post";
 export const SEARCH_POSTS = "search_posts";
 export const UPDATE_POST = "update_post";
@@ -72,16 +71,7 @@ export function fetchPosts() {
   };
 }
 
-export function fetchCategory(request) {
-  let cate = [];
-  _.map(request.data, post => {
-    cate.push(post.digest);
-  });
-  return {
-    type: FETCH_CATEGORIES,
-    payload: cate
-  };
-}
+
 
 export function createPost(values, callback) {
   source.posts[values["id"]] = values;
