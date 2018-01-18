@@ -5,17 +5,21 @@ and view posts by category.
 
 ## How to install:
 
-1. 
+1. Clone from github
+```
+git clone https://github.com/edie93/PostManagement.git
+```
+2. Under the path of the project
 ```
 npm install
 ```
--- install all dependencies
+to install all dependencies
 
 2. 
 ```
 npm start
 ```
--- compile
+to compile
 
 3. Go to URL: "http://localhost:8080/"
 
